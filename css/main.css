@@ -87,10 +87,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* ----- nav bar ----  */
+nav section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav section ul{
+  margin: 0;
+  background-color: red;
+  display: flex;
+  list-style: none;
+}
+/* ----  header ---- */
+header {
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ---- main ---- */
+main{
+  background-color: cyan;
+}
+main article {
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: column;
+}
+main article section {
+  background-color: deepskyblue;
+  display: flex;
+}
+main article section h2 {
+  background-color: darkgrey;
+  width: 60%;
+}
+img {
+  width: 40%;
+  height: 40%;
+}
+
+main article section p {
+  background-color: darksalmon;
+  width: 40%;
+}
+
+/* main article section {
+  background-color: deeppink;
+  width: 50%;
+} */
+/* ---- footer ---- */
+footer {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+footer h3 {
+  background-color: blueviolet;
+  text-align: center;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+.imgDescription {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
 /*
  * Hide visually and from screen readers
  */

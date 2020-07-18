@@ -86,11 +86,94 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  margin: 0;
+}
+   /* ----- nav bar ----  */
+
+nav {
+  margin: 0;
+  background-color: #3185fc;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
+
+input{
+  width:80px;
+}
+/* ----  header ---- */
+header {
+  width: 100%;
+  background-color: #3185fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: #f7d602;
+  margin-bottom: 0;
+}
+header h2 {
+  color: #f7d602;
+  margin-top: 0;
+}
+/* ---- main ---- */
+main{
+  background-color: #3185fc;
+  padding-bottom: 2%;
+}
+main article {
+  margin-bottom: 2%;
+  background-color: #e0ca3c;
+  display: flex;
+  flex-direction: column;
+}
+main article section {
+  display: flex;
+}
+main article section h2 {
+  width: 60%;
+}
+img {
+  width: 40%;
+  height: 40%;
+}
+
+main article section p {
+  width: 40%;
+}
+
+main ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- footer ---- */
+footer {
+  margin: 0;
+  background-color: #3185fc;
+  display: flex;
+  flex-direction: column;
+}
+footer h3 {
+  text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+.imgDescription {
+  display: flex;
+}
 /*
  * Hide visually and from screen readers
  */

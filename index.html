@@ -3,14 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Terre De Geek</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -23,19 +18,62 @@
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <nav>
+      <ul>
+        <li>
+          <a href="index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="html/produit.html">Nos Produits</a>
+        </li>
+        <li>
+          <a href="html/entreprise.html">à Propos de nous</a>
+        </li>
+      </ul>
+      <aside>
+        <input type="button" name="connexion" id="connexion" value="Connexion">
+      </aside>
+  </nav>
+  <header>
+    <h1>Terre De Geek</h1>
+    <h2>Le materiel Geek de Normandie</h2>
+  </header>
+  <main>
+    <article>
+      <section>
+        <h2><a href="html/produit.html">Smartphone Samsung</a></h2>
+        <p>Prix : 300€</p>
+      </section>
+      <section class="imgDescription">
+        <img src="img/smartTrans.jpg" alt="Smartphone">
+        <section>Smartphone *marque* modèle Solar Systeme S5 dernière génération sous android Lolipop </section>
+      </section>
+    </article>
+    <article>
+      <section>
+        <h2><a href="html/produit.html">Tablette Apple</a></h2>
+        <p>Prix : 450€</p>
+      </section>
+      <section class="imgDescription">
+        <img src="img/tablette.jpg" alt="Tablette">
+        <section>Tablette Pear 4 Prime sous lOS 3</section>
+      </section>
+    </article>
+    <article>
+      <section>
+        <h2><a href="html/produit.html">Laptop Asus</a></h2>
+        <p>Prix : 900€</p>
+      </section>
+      <section class="imgDescription">
+        <img src="img/laptop.jpg" alt="Laptop">
+        <section>Laptop Asus ROG Chimera, 17", Windows 10 Home </section>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <h3>Mentions Légales</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt fuga odio sed quo, dignissimos nemo sequi atque velit. Cumque, praesentium saepe a corporis nisi impedit eum! Ipsum ratione aspernatur dolores.</p>
+  </footer>
 </body>
 
 </html>

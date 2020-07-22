@@ -113,13 +113,20 @@ header {
 main{
   /* background-color: #3185fc; */
   padding-bottom: 2%;
-}
-main section {  
   width: 90%;
   margin: 1em auto;
+}
+main section {  
+  margin: 1em 0;
   background-color: #e0ca3c;
   flex-direction: column;
   padding-bottom: 1em;
+}
+
+main h2 {
+  margin: 0.5em 0;
+  background-color: #e0ca3c;
+  text-align: center;
 }
 main section article{
   justify-content: space-between;

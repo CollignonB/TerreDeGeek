@@ -91,7 +91,6 @@ textarea {
 
 nav {
   justify-content: space-between;
-  align-items: center;
 }
 
 nav ul li {
@@ -107,7 +106,6 @@ nav ul li a {
 header {
   width: 100%;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding-bottom: 1em;
 }
@@ -124,7 +122,6 @@ main section {
   padding-bottom: 1em;
 }
 main section article{
-  align-items: center;
   justify-content: space-between;
   margin: 0 1em;
 }
@@ -142,6 +139,12 @@ main li {
   list-style-type: none;
 }
 
+main section p {
+  margin: 0 1em;
+}
+main section h2 {
+  text-align: center;
+}
 
 /* ---- footer ---- */
 footer {
@@ -173,6 +176,10 @@ footer p {
 
 .textColorTwo {
   color: #e0ca3c;
+}
+
+.alignCenter {
+  align-items: center;
 }
 /*
  * Hide visually and from screen readers

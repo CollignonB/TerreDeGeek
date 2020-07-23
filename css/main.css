@@ -86,20 +86,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin : 0;
+  padding : 0;
+}
    /* ----- nav bar ----  */
 
-nav {
-  justify-content: space-between;
-}
 
 nav ul li {
+  height: 2em;
   margin : 0 0.5em;
   list-style: none;
 }
 
 nav ul li a {
+  font-size: 11px;
   text-decoration: none;
+  color: #e0ca3c;
 }
 
 /* ----  header ---- */
@@ -153,18 +157,44 @@ main section h2 {
   text-align: center;
 }
 
+main a {
+  text-decoration: none;
+}
+
+main section a {
+  margin: 0 auto;
+  align-items: center;
+  padding: 0.5em;
+}
+
+main table td {
+    border: 1px solid black;
+    border-radius: 2px;;
+}
+
 /* ---- footer ---- */
 footer {
   font-size: 14px;
   padding : 0.5em 0;
   flex-direction: column;
 }
-footer h3 {
+footer div h3 {
   text-align: center;
 }
-footer p {
+footer div p {
   margin : 0 1em;
 }
+
+footer div ul {
+  list-style-type: none;
+  width: 50%;
+  margin: auto;
+  height: 3em;
+}
+footer div ul li {
+  margin : 0 0.5em;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -176,7 +206,7 @@ footer p {
 .marginZ {
   margin: 0;;
 }
-/* class  */
+
 .backgroundColorOne {
   background-color: #3185fc;
 }
@@ -188,6 +218,8 @@ footer p {
 .alignCenter {
   align-items: center;
 }
+
+
 /*
  * Hide visually and from screen readers
  */

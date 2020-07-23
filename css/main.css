@@ -150,6 +150,13 @@ img {
   width: 40%;
   height: 40%;
 }
+main section div  {
+  margin: auto;
+}
+
+#d2 {
+  display: none;
+}
 /* main produit */
 main ul {
   flex-direction: column;
@@ -206,20 +213,31 @@ footer div ul {
 footer div ul li {
   margin : 0 0.5em;
 }
-
+/* ---------------- responsive --------------------------------------- */
 @media screen and (min-width : 720px){
+
   #cardsBlock {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width : 45%;
+  }
+  main div section {
+    width : 40%;
     margin: auto;
     margin-bottom: 1em;
+    min-height:300px;
   }
   main h2 {
     margin: 1.5em 0;
   }
-  main section {
-    
+}
+
+@media screen and (min-width: 960px) {
+  main div section {
+    width: 30%;
+  }
+ h2:hover #d2 {
+    display: flex;
   }
 }
 

@@ -132,6 +132,10 @@ main section {
   padding-bottom: 1em;
 }
 
+main section article {
+  align-items: center;
+}
+
 main h2 {
   margin: 0.5em 0;
   background-color: #e0ca3c;
@@ -203,6 +207,21 @@ footer div ul li {
   margin : 0 0.5em;
 }
 
+@media screen and (min-width : 720px){
+  #cardsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    width : 45%;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+  main h2 {
+    margin: 1.5em 0;
+  }
+  main section {
+    
+  }
+}
 
 /* ==========================================================================
    Helper classes

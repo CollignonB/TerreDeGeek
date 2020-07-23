@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Terre De Geek</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="geek.png" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#fafafa">
+    </head>
+<body>
+  <nav class="dFlex marginZ backgroundColorOne alignCenter">
+    <ul class="dFlex">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="prestations.html">Nos Services</a></li>
+        <li><a href="entreprise.html">À Propos de nous</a></li>
+        <li><a href="contact.html">Nous contacter</a></li>
+    </ul>
+</nav>
+<header class="dFlex backgroundColorOne alignCenter">
+    <h1 class="marginZ textColorTwo"><a href="../index.html">Terre De Geek</a></h1>
+  <h2 class="marginZ textColorTwo">Le materiel Geek de Normandie</h2>
+</header>
+<main>
+    <section>
+        <form action="#" method="POST">
+            <div>
+                <label for="lastname">Nom</label>
+                <input type="text" id="lastname" placeholder="Nom" maxlength="40" minlength="2" required>
+            </div>
+            <div>
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" placeholder="Prénom" maxlength="40" minlength="2" >
+            </div>
+            <div>
+                <label for="phone">numéros de téléphone</label>
+                <input type="tel" id="phone"
+                    pattern="0[1-9]{1}[0-9]{9}" 
+                >
+            </div>
+            <div>
+                <label for="email">adresse mail</label>
+                <input type="email" id="email" placeholder="azerty@uiop.com" required >
+            </div>
+            <div>
+                <label for="age">Âge</label>
+                <input type="number" id="age" >
+            </div>
+            <div>
+                <label for="object">Objet de la demande</label>
+                <select name="object" id="object" required>
+                    <option value="">Choisissez un objet</option>
+                    <option value="information">information</option>
+                    <option value="réclamation">réclamation</option>
+                    <option value="partenariat">partenariat</option>
+                    <option value="autre">autre</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+            </div>
+
+            <input type="submit" value="envoyer">
+        </form>
+    </section>
+</main>
+<footer class="marginZ backgroundColorOne">
+    <div>
+        <h3>Mentions Légales</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt fuga odio sed quo, dignissimos nemo sequi atque velit. Cumque, praesentium saepe a corporis nisi impedit eum! Ipsum ratione aspernatur dolores.</p>
+      </div>
+      <div>
+        <ul class="dFlex">
+          <li><a href="https://fr-fr.facebook.com/"><img src="../img/facebook.png" alt="link to Facebook TerreDeGeek"></a></li>
+          <li><a href="https://twitter.com/home"><img src="../img/twitter.png" alt="link to twitter TerreDeGeek"></a></li>
+          <li><a href="https://www.instagram.com/?hl=fr"><img src="../img/instagram-sketched.png" alt="link to instagram TerreDeGeek"></a></li>
+        </ul>
+      </div></footer>
+</body>

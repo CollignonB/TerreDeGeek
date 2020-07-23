@@ -91,7 +91,10 @@ textarea {
   margin : 0;
   padding : 0;
 }
-   /* ----- nav bar ----  */
+a {
+    text-decoration: none;
+}
+   /* -------------- nav bar ------------------------  */
 
 
 nav ul li {
@@ -102,20 +105,22 @@ nav ul li {
 
 nav ul li a {
   font-size: 11px;
-  text-decoration: none;
   color: #e0ca3c;
 }
 
-/* ----  header ---- */
+/* ------------------  header --------------------- */
 header {
   width: 100%;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 1em;
 }
-/* ---- main ---- */
+header a {
+  color: #e0ca3c;
+}
+/* --------------------- main ------------------------ */
+/* main index */
 main{
-  /* background-color: #3185fc; */
   padding-bottom: 2%;
   width: 90%;
   margin: 1em auto;
@@ -141,7 +146,7 @@ img {
   width: 40%;
   height: 40%;
 }
-
+/* main produit */
 main ul {
   flex-direction: column;
 }
@@ -157,9 +162,6 @@ main section h2 {
   text-align: center;
 }
 
-main a {
-  text-decoration: none;
-}
 
 main section a {
   margin: 0 auto;
@@ -171,8 +173,14 @@ main table td {
     border: 1px solid black;
     border-radius: 2px;;
 }
+main form {
+  padding: 0 1em;
+}
+main form label {
+  display: block;
+}
 
-/* ---- footer ---- */
+/* ------------------------ footer ------------------------ */
 footer {
   font-size: 14px;
   padding : 0.5em 0;
@@ -184,7 +192,7 @@ footer div h3 {
 footer div p {
   margin : 0 1em;
 }
-
+/* socail media */
 footer div ul {
   list-style-type: none;
   width: 50%;
@@ -217,6 +225,10 @@ footer div ul li {
 
 .alignCenter {
   align-items: center;
+}
+
+.minH {
+  min-height: 45vh;
 }
 
 

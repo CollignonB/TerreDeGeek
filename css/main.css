@@ -124,12 +124,18 @@ main{
   padding-bottom: 2%;
   width: 90%;
   margin: 1em auto;
+  min-height: 70vh;
 }
+
 main section {  
   margin: 1em 0;
   background-color: #e0ca3c;
   flex-direction: column;
   padding-bottom: 1em;
+}
+
+main section article {
+  align-items: center;
 }
 
 main h2 {
@@ -146,6 +152,10 @@ img {
   width: 40%;
   height: 40%;
 }
+main section div  {
+  margin: auto;
+}
+
 /* main produit */
 main ul {
   flex-direction: column;
@@ -168,7 +178,11 @@ main section a {
   align-items: center;
   padding: 0.5em;
 }
-
+main table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 main table td {
     border: 1px solid black;
     border-radius: 2px;;
@@ -185,6 +199,7 @@ footer {
   font-size: 14px;
   padding : 0.5em 0;
   flex-direction: column;
+  justify-content: space-between;
 }
 footer div h3 {
   text-align: center;
@@ -198,11 +213,42 @@ footer div ul {
   width: 50%;
   margin: auto;
   height: 3em;
+  justify-content: space-between;
 }
 footer div ul li {
+  
   margin : 0 0.5em;
 }
+/* ---------------- responsive --------------------------------------- */
+@media screen and (min-width : 720px){
 
+  #cardsBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main div section {
+    width : 40%;
+    margin: auto;
+    margin-bottom: 1em;
+    min-height:300px;
+  }
+  main h2 {
+    margin: 1.5em 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  main div section {
+    width: 30%;
+  }
+  .hoverMe:hover .hide {
+    display: block;
+    height: 100px;
+    transition: 2s ease;
+  }
+  
+}
 
 /* ==========================================================================
    Helper classes
@@ -230,7 +276,12 @@ footer div ul li {
 .minH {
   min-height: 45vh;
 }
-
+ .hide {
+   width: 90%;
+   height: 10px;
+   background-color: #D4BC21;
+   display: none;
+ }
 
 /*
  * Hide visually and from screen readers

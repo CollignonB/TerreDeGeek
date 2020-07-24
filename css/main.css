@@ -124,7 +124,9 @@ main{
   padding-bottom: 2%;
   width: 90%;
   margin: 1em auto;
+  min-height: 70vh;
 }
+
 main section {  
   margin: 1em 0;
   background-color: #e0ca3c;
@@ -154,9 +156,6 @@ main section div  {
   margin: auto;
 }
 
-#d2 {
-  display: none;
-}
 /* main produit */
 main ul {
   flex-direction: column;
@@ -179,7 +178,11 @@ main section a {
   align-items: center;
   padding: 0.5em;
 }
-
+main table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 main table td {
     border: 1px solid black;
     border-radius: 2px;;
@@ -196,6 +199,7 @@ footer {
   font-size: 14px;
   padding : 0.5em 0;
   flex-direction: column;
+  justify-content: space-between;
 }
 footer div h3 {
   text-align: center;
@@ -209,8 +213,10 @@ footer div ul {
   width: 50%;
   margin: auto;
   height: 3em;
+  justify-content: space-between;
 }
 footer div ul li {
+  
   margin : 0 0.5em;
 }
 /* ---------------- responsive --------------------------------------- */
@@ -236,9 +242,12 @@ footer div ul li {
   main div section {
     width: 30%;
   }
- h2:hover #d2 {
-    display: flex;
+  .hoverMe:hover .hide {
+    display: block;
+    height: 100px;
+    transition: 2s ease;
   }
+  
 }
 
 /* ==========================================================================
@@ -267,7 +276,12 @@ footer div ul li {
 .minH {
   min-height: 45vh;
 }
-
+ .hide {
+   width: 90%;
+   height: 10px;
+   background-color: #D4BC21;
+   display: none;
+ }
 
 /*
  * Hide visually and from screen readers
